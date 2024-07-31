@@ -1,0 +1,75 @@
+------------Account--------------------
+---------------------------------------
+Account objacc= new Account();
+objacc.name='Suvendu Nayak';
+objacc.AccountNumber='3478913839';
+objacc.Site='Jajpur';
+insert objacc;
+
+Account objacc2= new Account();
+objacc2.name='Suvendu Nayak';
+objacc2.AccountNumber='3478913839';
+objacc2.Site='Jajpur';
+insert objacc2;
+
+Account objacc3= new Account();
+objacc3.name='Suvendu Nayak';
+objacc3.AccountNumber='3478913839';
+objacc3.Site='Jajpur';
+insert objacc3;
+---------------Contact-----------------
+---------------------------------------
+Contact objcon = new Contact();
+objcon.FirstName = 'Kailsa Chandra';
+objcon.LastName = 'Nayak';
+objcon.Phone = '7205489434';
+objcon.Email = 'sani3nayak@gmail.com';
+insert objcon;
+
+Contact objcon2 = new Contact();
+objcon2.FirstName = 'Sanjukta';
+objcon2.LastName = 'Nayak';
+objcon2.Phone = '8018029262';
+objcon2.Email = 'sanjuktanayak@gmail.com';
+insert objcon2;
+
+
+Contact objcon3 = new Contact();
+objcon3.FirstName = 'Sanjukta';
+objcon3.LastName = 'Nayak';
+objcon3.Phone = '8018029262';
+objcon3.Email = 'sanjuktanayak@gmail.com';
+insert objcon3;
+
+-----------------LEAD------------------------
+---------------------------------------------
+Lead objlead = new Lead();
+objlead.FirstName = 'Sanjukta';
+objlead.LastName = 'Nayak';
+objlead.Company = 'LD Tech';
+objlead.Email = 'sani3nayak@gmail.com';
+objlead.Phone = '7205489434';
+insert objlead;
+
+Lead objlead1 = new Lead();
+objlead1.FirstName = 'Suvendu';
+objlead1.LastName = 'Nayak';
+objlead1.Company = 'LD Tech';
+objlead1.Email = 'suvendu93nayak@gmail.com';
+objlead1.Phone = '7008863571';
+insert objlead1;
+
+
+---------Patient-----------------------
+----------------------------------------
+Patient__c objpat= new Patient__c();
+objpat.Name= 'Sanjukta Nayak';
+objpat.Gender__c='Female';
+objpat.Date_Of_Birth__c= Date.valueOf('1966-03-26');
+insert objpat;
+
+Patient__c objpat1= new Patient__c();
+objpat1.Name= 'Kailas Chandra Nayak';
+objpat1.Gender__c='Male';
+objpat1.Date_Of_Birth__c= Date.valueOf('1964-05-10');
+insert objpat1;
