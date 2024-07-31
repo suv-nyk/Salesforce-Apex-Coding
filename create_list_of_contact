@@ -1,0 +1,81 @@
+//Declare List of Contact for create
+List<Contact> conList = new List<Contact>();
+
+//new Contact instance
+Contact objcon5= new Contact();
+
+//pass the values
+objcon5.FirstName = 'Kailsa Chandra';
+objcon5.LastName = 'Nayak';
+objcon5.Phone = '9899898988';
+objcon5.Email = 'sani3nayak@gmail.com';
+
+//add to list of Contact
+conList.add(objcon5);
+
+//repeat for 3 records
+//new Contact instance
+Contact objcon6= new Contact();
+
+//pass the values
+objcon6.FirstName = 'Subhasmita';
+objcon6.LastName = 'Das';
+objcon6.Phone = '8925362718';
+objcon6.Email = 'subhasmitadas@gmail.com';
+
+//add to list of Contact
+conList.add(objcon6);
+
+//new Contact instance
+Contact objcon7= new Contact();
+
+//pass the values
+objcon7.FirstName = 'Sanjukta';
+objcon7.LastName = 'Nayak';
+objcon7.Phone = '9827382819';
+objcon7.Email = 'sanjuktanayak@gmail.com';
+
+//add to list of Contact
+conList.add(objcon7);
+
+//insert the list
+Insert conList; 
+
+=========================================================================
+
+//Declare List of Contact for update
+List<Contact> conListedit = new List<Contact>();
+
+//take 1 Contact instance with id
+Contact editConObj = new Contact(ID = '003dM000000evwgQAA');
+
+//update 2 fields
+editConObj.FirstName = 'Suvendu';
+editConObj.LastName = 'Nayak';
+
+//add it to another list of Contact which is defined for update
+conListedit.add(editConObj);
+
+//repeat for 3 records
+//take 1 Contact instance with id
+Contact editConObj2 = new Contact(ID = '003dM000000evwhQAA');
+
+//update 2 fields
+editConObj2.Phone = '7205489434';
+
+//add it to another list of Contact which is defined for update
+conListedit.add(editConObj2);
+
+//take 1 Contact instance with id
+Contact editConObj3 = new Contact(Id = '003dM000000evwiQAA');
+
+//update 2 fields
+editConObj3.LastName = 'Das';
+editConObj3.Phone= '7263736374';
+editConObj3.Email = 'sani93nayak@gmail.com';
+
+//add it to another list of Contact which is defined for update
+conListedit.add(editConObj3);
+
+//update the list
+Update conListedit
