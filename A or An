@@ -1,0 +1,23 @@
+Q- Given a work, prepend it with the correct indefinite article ("a" or "an") followed by a space based on the following rule: 
+   words starting with a vowel (a, e, i, o, or u) are prepended with "an", while words starting with any other letter are prepended with "a".
+   aOrAn('apple') = 'an apple'
+   aOrAn('banana') = 'a banana'
+
+public String aOrAn(String word) {
+    //code here
+    if (word == null || word.length() == 0) {
+        return '';
+    }
+
+    //Convert the word to lowercase for comparison
+    String lowerCaseWord = word.toLowerCase();
+
+    //Check the first letter of the word
+    String firstChar = lowerCaseWord.substring(0, 1);
+    if (firstChar == 'a' || firstChar == 'e' || firstChar == 'i' || firstChar == 'o' || firstChar == 'u') {
+        return 'an ' + word;        
+    }
+       else {
+           return 'a ' + word;
+       }
+}
